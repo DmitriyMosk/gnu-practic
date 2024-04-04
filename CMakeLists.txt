@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.27)
 # Check version
 
+file(COPY ${CMAKE_SOURCE_DIR}/data DESTINATION ${CMAKE_BINARY_DIR})
+file(COPY ${CMAKE_SOURCE_DIR}/gnu_ui/pract.ui DESTINATION ${CMAKE_BINARY_DIR}/gnu_ui)
+
 project(Practice C)
 #Project
 
@@ -20,7 +23,8 @@ set(SOURCE_FILES main.c
         FileIO/FileIO_End.c
         FileIO/FileIO_Write.c
         FileIO/FileIO_Read.c
-        gtkMenu/gtk_Activate.c)
+        gtkMenu/gtk_Activate.c
+        gtkMenu/gtk_Events.c)
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(GTK REQUIRED gtk4)
