@@ -25,5 +25,4 @@ void gtk_Activate(GtkApplication *app, gpointer userdata) {
     g_signal_connect (draw_smartphone, "clicked", G_CALLBACK (gtk_event_draw_smartphone_clicked), NULL);
 
     gtk_widget_set_visible(GTK_WIDGET(window), TRUE);
-    g_object_unref(builder);
 }

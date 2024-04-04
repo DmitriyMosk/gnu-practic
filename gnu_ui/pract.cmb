@@ -80,7 +80,10 @@
 	(1,29,"GtkWidget","halign","start",None,None,None,None,None,None,None,None,None),
 	(1,29,"GtkWidget","margin-start","10",None,None,None,None,None,None,None,None,None),
 	(1,29,"GtkWidget","margin-top","10",None,None,None,None,None,None,None,None,None),
-	(1,30,"GtkLabel","label"," ",None,None,None,None,None,None,None,None,None)
+	(1,30,"GtkLabel","label"," ",None,None,None,None,None,None,None,None,None),
+	(1,30,"GtkWidget","margin-start","100",None,None,None,None,None,None,None,None,None),
+	(1,30,"GtkWidget","margin-top","10",None,None,None,None,None,None,None,None,None),
+	(1,30,"GtkWidget","valign","start",None,None,None,None,None,None,None,None,None)
   </object_property>
   <object_signal>
 	(1,1,29,"GtkButton","clicked","gtk_event_draw_smartphone_clicked",None,None,None,None,None)

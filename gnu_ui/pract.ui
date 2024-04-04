@@ -53,6 +53,9 @@
                 <child>
                   <object class="GtkLabel" id="smartphone_info">
                     <property name="label"> </property>
+                    <property name="margin-start">100</property>
+                    <property name="margin-top">10</property>
+                    <property name="valign">start</property>
                   </object>
                 </child>
               </object>
