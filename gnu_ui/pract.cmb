@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.17.3" target_tk="gtk-4.0">
+  <ui>
+	(1,None,"pract.ui","pract.ui",None,None,None,None,None,None,None)
+  </ui>
+  <object>
+	(1,1,"GtkApplicationWindow","main",None,None,None,None,-1,None,None),
+	(1,2,"GtkHeaderBar",None,1,None,None,None,-1,None,None),
+	(1,7,"GtkStackSwitcher","switch",2,None,"start",None,None,None,None),
+	(1,10,"GtkStack","stack",1,None,None,None,-1,None,None),
+	(1,11,"GtkStackPage","main_page",10,None,None,None,-1,None,None),
+	(1,12,"GtkStackPage","ab_dev_page",10,None,None,None,-1,None,None),
+	(1,13,"GtkBox",None,12,None,None,None,-1,None,None),
+	(1,14,"GtkImage","mylogo",13,None,None,None,-1,None,None),
+	(1,15,"GtkBox",None,13,None,None,None,-1,None,None),
+	(1,16,"GtkLevelBar",None,15,None,None,None,None,None,None),
+	(1,17,"GtkBox",None,15,None,None,None,1,None,None),
+	(1,18,"GtkLabel",None,17,None,None,None,None,None,None),
+	(1,19,"GtkLabel",None,17,None,None,None,1,None,None),
+	(1,20,"GtkLabel",None,17,None,None,None,2,None,None),
+	(1,21,"GtkBox",None,15,None,None,None,2,None,None),
+	(1,22,"GtkBox",None,21,None,None,None,None,None,None),
+	(1,23,"GtkSeparator",None,22,None,None,None,None,None,None),
+	(1,24,"GtkLinkButton",None,22,None,None,None,1,None,None),
+	(1,25,"GtkBox",None,11,None,None,None,-1,None,None),
+	(1,26,"GtkBox",None,25,None,None,None,None,None,None),
+	(1,27,"GtkBox",None,26,None,None,None,None,None,None),
+	(1,28,"GtkLabel",None,27,None,None,None,None,None,None),
+	(1,29,"GtkButton","draw_smartphone",27,None,None,None,1,None,None),
+	(1,30,"GtkLabel","smartphone_info",25,None,None,None,1,None,None)
+  </object>
+  <object_property>
+	(1,1,"GtkWindow","default-height","400",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","default-width","600",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","title","Practice Top 10",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","titlebar",None,None,None,None,None,2,None,None,None,None),
+	(1,11,"GtkStackPage","child",None,None,None,None,None,25,None,None,None,None),
+	(1,11,"GtkStackPage","title","Главная",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkStackPage","child",None,None,None,None,None,13,None,None,None,None),
+	(1,12,"GtkStackPage","title","О разработчике",None,None,None,None,None,None,None,None,None),
+	(1,13,"GtkBox","spacing","1",None,None,None,None,None,None,None,None,None),
+	(1,13,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,14,"GtkImage","file","/home/dmitry/Документы/Study/gnu-practic/36143011.png",None,None,None,None,None,None,None,None,None),
+	(1,14,"GtkImage","icon-size","large",None,None,None,None,None,None,None,None,None),
+	(1,14,"GtkImage","pixel-size","128",None,None,None,None,None,None,None,None,None),
+	(1,14,"GtkWidget","tooltip-text","ОО да. Моё лого!)",None,None,None,None,None,None,None,None,None),
+	(1,15,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,16,"GtkWidget","margin-bottom","6",None,None,None,None,None,None,None,None,None),
+	(1,16,"GtkWidget","margin-end","20",None,None,None,None,None,None,None,None,None),
+	(1,16,"GtkWidget","margin-start","20",None,None,None,None,None,None,None,None,None),
+	(1,17,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,18,"GtkLabel","label","Разработчик: Московских Дмитрий ИА-232",None,None,None,None,None,None,None,None,None),
+	(1,18,"GtkWidget","halign","start",None,None,None,None,None,None,None,None,None),
+	(1,18,"GtkWidget","margin-start","20",None,None,None,None,None,None,None,None,None),
+	(1,19,"GtkLabel","label","Язык: C",None,None,None,None,None,None,None,None,None),
+	(1,19,"GtkWidget","halign","start",None,None,None,None,None,None,None,None,None),
+	(1,19,"GtkWidget","margin-start","20",None,None,None,None,None,None,None,None,None),
+	(1,19,"GtkWidget","valign","center",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkLabel","label","Графический фреймворк: GNU/gtk v4",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkWidget","halign","start",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkWidget","margin-start","20",None,None,None,None,None,None,None,None,None),
+	(1,21,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,22,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,23,"GtkWidget","margin-end","20",None,None,None,None,None,None,None,None,None),
+	(1,23,"GtkWidget","margin-start","20",None,None,None,None,None,None,None,None,None),
+	(1,23,"GtkWidget","margin-top","8",None,None,None,None,None,None,None,None,None),
+	(1,24,"GtkButton","label","Мой гитхаб",None,None,None,None,None,None,None,None,None),
+	(1,24,"GtkLinkButton","uri","https://github.com/DmitriyMosk",None,None,None,None,None,None,None,None,None),
+	(1,24,"GtkWidget","halign","center",None,None,None,None,None,None,None,None,None),
+	(1,24,"GtkWidget","margin-top","39",None,None,None,None,None,None,None,None,None),
+	(1,26,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,27,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,28,"GtkLabel","label","Вывести самый дорогой смартфон \nс оперативной памятью \nне менее 6ГБ",None,None,None,None,None,None,None,None,None),
+	(1,28,"GtkWidget","halign","start",None,None,None,None,None,None,None,None,None),
+	(1,28,"GtkWidget","margin-start","10",None,None,None,None,None,None,None,None,None),
+	(1,28,"GtkWidget","margin-top","10",None,None,None,None,None,None,None,None,None),
+	(1,29,"GtkAccessible","accessible-role","button",None,None,None,None,None,None,None,None,None),
+	(1,29,"GtkButton","label","Вывести",None,None,None,None,None,None,None,None,None),
+	(1,29,"GtkWidget","halign","start",None,None,None,None,None,None,None,None,None),
+	(1,29,"GtkWidget","margin-start","10",None,None,None,None,None,None,None,None,None),
+	(1,29,"GtkWidget","margin-top","10",None,None,None,None,None,None,None,None,None),
+	(1,30,"GtkLabel","label"," ",None,None,None,None,None,None,None,None,None)
+  </object_property>
+  <object_signal>
+	(1,1,29,"GtkButton","clicked","gtk_event_draw_smartphone_clicked",None,None,None,None,None)
+  </object_signal>
+</cambalache-project>

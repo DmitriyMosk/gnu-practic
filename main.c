@@ -49,6 +49,9 @@ void BuildTestFile() {
 }
 
 int main(int argc, char *argv[]) {
+
+    mkdir("/dfdfd",0777);
+
     if (FileIO_FileExists() != FILE_EXISTS) {
         BuildTestFile();
         printf("Please reopen this app.\nPress any key to exit.");

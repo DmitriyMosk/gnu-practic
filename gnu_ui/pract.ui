@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.90.1 -->
+<interface>
+  <!-- interface-name pract.ui -->
+  <requires lib="gtk" version="4.12"/>
+  <object class="GtkApplicationWindow" id="main">
+    <property name="default-height">400</property>
+    <property name="default-width">600</property>
+    <property name="title">Practice Top 10</property>
+    <property name="titlebar">
+      <object class="GtkHeaderBar">
+        <child type="start">
+          <object class="GtkStackSwitcher" id="switch"/>
+        </child>
+      </object>
+    </property>
+    <child>
+      <object class="GtkStack" id="stack">
+        <child>
+          <object class="GtkStackPage" id="main_page">
+            <property name="child">
+              <object class="GtkBox">
+                <child>
+                  <object class="GtkBox">
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="halign">start</property>
+                            <property name="label">Вывести самый дорогой смартфон 
+с оперативной памятью 
+не менее 6ГБ</property>
+                            <property name="margin-start">10</property>
+                            <property name="margin-top">10</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="draw_smartphone">
+                            <property name="accessible-role">button</property>
+                            <property name="halign">start</property>
+                            <property name="label">Вывести</property>
+                            <property name="margin-start">10</property>
+                            <property name="margin-top">10</property>
+                            <signal name="clicked" handler="gtk_event_draw_smartphone_clicked"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="smartphone_info">
+                    <property name="label"> </property>
+                  </object>
+                </child>
+              </object>
+            </property>
+            <property name="title">Главная</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkStackPage" id="ab_dev_page">
+            <property name="child">
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="spacing">1</property>
+                <child>
+                  <object class="GtkImage" id="mylogo">
+                    <property name="file">/home/dmitry/Документы/Study/gnu-practic/36143011.png</property>
+                    <property name="icon-size">large</property>
+                    <property name="pixel-size">128</property>
+                    <property name="tooltip-text">ОО да. Моё лого!)</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkLevelBar">
+                        <property name="margin-bottom">6</property>
+                        <property name="margin-end">20</property>
+                        <property name="margin-start">20</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="halign">start</property>
+                            <property name="label">Разработчик: Московских Дмитрий ИА-232</property>
+                            <property name="margin-start">20</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="halign">start</property>
+                            <property name="label">Язык: C</property>
+                            <property name="margin-start">20</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="halign">start</property>
+                            <property name="label">Графический фреймворк: GNU/gtk v4</property>
+                            <property name="margin-start">20</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <object class="GtkSeparator">
+                                <property name="margin-end">20</property>
+                                <property name="margin-start">20</property>
+                                <property name="margin-top">8</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkLinkButton">
+                                <property name="halign">center</property>
+                                <property name="label">Мой гитхаб</property>
+                                <property name="margin-top">39</property>
+                                <property name="uri">https://github.com/DmitriyMosk</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </property>
+            <property name="title">О разработчике</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
